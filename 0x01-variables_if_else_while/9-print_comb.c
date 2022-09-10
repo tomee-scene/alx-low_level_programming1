@@ -9,14 +9,14 @@
  */
 int main(void)
 {
-	char c;
+	int c;
 
-	c = '0';
+	c = 48;
 
-	while (c <= '9')
+	while (c <= 57)
 	{
 		putchar(c);
-		if (c != '9')
+		if (c != 57)
 		{
 			putchar(',');
 			putchar(' ');
