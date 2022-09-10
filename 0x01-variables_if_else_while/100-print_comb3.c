@@ -8,22 +8,22 @@
  */
 int main(void)
 {
-	char c, d;
+	int c, d;
 
-	c = '0';
-	d = '0';
+	c = 48;
+	d = 48;
 
-	while (c <= '9')
+	while (c <= 57)
 	{
-		d = '1';
+		d = 49;
 
-		while (d <= '9')
+		while (d <= 57)
 		{
 			if (d != c && d > c)
 			{
 				putchar(c);
 				putchar(d);
-				if (c == '8' && d == '9')
+				if (c == 56 && d == 57)
 				{
 					break;
 				}
