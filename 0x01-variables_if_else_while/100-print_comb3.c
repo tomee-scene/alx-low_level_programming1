@@ -10,23 +10,19 @@ int main(void)
 {
 	int c, d;
 
-	c = 48;
-	d = 48;
+	c = 0;
 
-	while (c <= 57)
+	while (c <= 8)
 	{
-		d = 49;
+		d = c + 1;
 
-		while (d <= 57)
+		while (d <= 9)
 		{
-			if (d != c && d > c)
+			putchar(c % 10 + '0');
+			putchar(d % 10 + '0');
+
+			if (!(c == 8 && d == 9))
 			{
-				putchar(c);
-				putchar(d);
-				if (c == 56 && d == 57)
-				{
-					break;
-				}
 				putchar(',');
 				putchar(' ');
 			}
