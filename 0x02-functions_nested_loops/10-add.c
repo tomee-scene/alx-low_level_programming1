@@ -13,7 +13,7 @@ int add(int a, int b)
 {
 	int sum;
 
-	sum = int a + int b;
+	sum = a + b;
 
 	return (sum);
 }
