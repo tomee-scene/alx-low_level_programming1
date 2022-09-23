@@ -11,10 +11,11 @@ char *leet(char *str)
 	char a[11] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
 	char b[11] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
 
-	int j = 0, i;
+	int j, i;
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
+		j = 0;
 		while (j < 11)
 		{
 			if (str[i] == b[j])
