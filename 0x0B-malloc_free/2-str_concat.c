@@ -30,7 +30,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	len2++;
 
-	concat = malloc(sizeof(char) * (i + j));
+	concat = malloc(sizeof(char) * (len1 + len2));
 
 	j = 0, i = 0;
 	while (i < len1)
